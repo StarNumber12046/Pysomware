@@ -137,6 +137,10 @@ client_secret = config['client_secret']
 # Redirect URI
 redirect_uri = 'http://localhost:5000/callback'  # Replace with your redirect URI
 
+@app.errorhandler(500)
+def internal_server_error(e):
+    return "<a href=" + url_for('.index') + ">Home</a>", 500
+
 @app.route('/')
 def index():
     """Step 1: User Authorization.
