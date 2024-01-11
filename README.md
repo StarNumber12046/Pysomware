@@ -1,4 +1,4 @@
-> [!warning] personal use only
+> [!warning]
 > This is not intended for malicious use, only use this on machines you own or have permission to run this on
 
 # Pysomware
